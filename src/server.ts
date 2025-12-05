@@ -28,9 +28,9 @@ app.get("/users/:id", async (req: Request, res: Response) => {
     res.status(500).json({
       success: false,
       message: err.message,
-    });
+    })
   }
-});
+})
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
